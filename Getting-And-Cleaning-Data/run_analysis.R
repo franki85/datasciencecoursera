@@ -34,7 +34,7 @@ activity_labels <- read.table("activity_labels.txt")[,2]
 features <- read.table("features.txt")[,2]
 
 # grepping mean and standard deviation for each measurement.
-extracted_features <- grepl("mean|std", features)
+extract_features <- grepl("mean|std", features)
 
 # reading X_test & y_test data...
 X_test <- read.table("test/X_test.txt")
@@ -83,4 +83,4 @@ melt_data      = melt(data, id = id_labels, measure.vars = data_labels)
 # Apply mean function to dataset using dcast function
 tidy_data   = dcast(melt_data, subject + Activity_Label ~ variable, mean)
 
-write.table(tidy_data, file = "./tidy_data.txt")
+write.csv(tidy_data, "tidy.csv", row.names=FALSE)
