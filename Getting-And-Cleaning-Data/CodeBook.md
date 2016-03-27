@@ -6,7 +6,7 @@ This code book will describe the data used in this project, as well as the proce
 
 30 volunteers performed 6 different activities while wearing a smartphone. The smartphone captured various data about their movements.
 
-#Explanation of data
+##Explanation of data
 
 - features.txt: Names of the 561 features.
 - activity_labels.txt: Names and IDs for each of the 6 activities.
