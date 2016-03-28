@@ -29,4 +29,4 @@
 
 ##Outputs produced
 
-Tidy dataset file tidy.csv 
+Tidy dataset file tidy_data.txt
